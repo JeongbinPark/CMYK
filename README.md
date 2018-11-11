@@ -1,0 +1,2 @@
+# CMYK
+for web studying
