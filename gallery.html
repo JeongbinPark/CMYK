@@ -5,6 +5,80 @@
     <title>Gallery</title>
     <style>/*미완성*/
 
+    body{
+    background-color:#F7F7EB;
+		margin:0px;
+    }
+
+    div{
+			position:relative;
+		}
+
+    .sideBar{
+			position: absolute;
+			left:0px;
+			top:0px;
+      width:370px;
+			height: 756px;
+			background-color:#F0F0E0;
+      z-index: 1;
+	   }
+
+     .sideBar>.Box{
+ 			left:0px;
+ 			margin: 40px;
+      width: 293.5px;
+ 			height: 160px;
+ 			background-color: black;
+ 		}
+
+    #profileImg{
+			margin-top:30px;
+		}
+
+    .navi{
+			display: inline-block;
+			margin:40px;
+			margin-top:0px;
+			width: 293.5px;
+			height: auto;
+			border: 1px solid gray;
+			background-color:white;
+			font-size: 15px;
+		}
+
+    .navi .child{
+		float:left;
+		width: 293.5px;
+		height: 50px;
+		line-height: 3;
+		text-align: center;
+		border-bottom: 1px solid gray;
+		box-sizing: border-box;
+		}
+
+    .navi .child:last-child{
+		border-bottom: 10px;
+		}
+
+    #favorite{
+		height:180px;
+		margin-top:70px;
+		margin-bottom:30px;
+    display: grid;
+    grid-template-columns: 140px 1fr;
+    padding:5px;
+    box-sizing: border-box;
+    background-color: gray;
+    }
+
+    .grid{
+		margin:5px;
+		margin-top:45px;
+		height:120px;
+		background-color: white;
+		}
+
     * {
       box-sizing: border-box; /*박스의 크기를 테두리를 기준으로 계산함*/
     }
@@ -128,9 +202,42 @@
   </head>
   <body>
 
+    <div class="sideBar">
+
+			<div class="Box" id="profileImg"></div>
+      <div class="navi">
+				<div class="child">HOME</div>
+				<div class="child">BOARD</div>
+				<div class="child"><a href="gallery.html">GALLERY</a></div>
+				<div class="child">VISIT</div>
+			</div>
+
+		<div class="Box" id="favorite">
+      <div class="grid">
+        <ul>
+          <li>Git</li>
+          <li>Stack</li>
+        	<li>Solo Learn</li>
+        	<li>CodeChain</li>
+        </ul>
+        </div>
+        <div class="grid">
+        	<ul>
+        		<li>PKNU</li>
+        		<li>LMS</li>
+        		<li>NAVER</li>
+        		<li>DAUM</li>
+        	</ul>
+        </div>
+      </div>
+
+    </div>
+
+<div><!--사이드바랑 안겹치게 하기-->
+
     <h2 style="text-align:center">Gallery</h2>
 
-    <div class="row">
+    <div class="row"><!--js 파일로 묶기-->
       <div class="column">
         <img src="./img/sketch_small.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
       </div>
@@ -197,6 +304,8 @@
       </div>
 
     </div>
+
+</div>
 
     <script>
       function openModal() {
