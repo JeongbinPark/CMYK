@@ -1,0 +1,77 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>
+		</title>
+    <style>
+  	.contents {
+		width: 1000px;
+	  height:450px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px ,auto);
+  }
+  .contents>div{
+    border:3px solid gray;
+    border-radius: 5px;
+  }
+  .board {
+    grid-column: 1 / 3;
+    grid-row: 1/3;
+    padding : 20px 50px 0px 50px;
+    background-color:gray;
+  }
+
+  .gallery{
+    grid-column: 1 / 3;
+    grid-row: 3;
+
+      background-color: gray;
+  }
+  .visit{
+    grid-column: 3;
+    grid-row: 1/4;
+
+      background-color:gray;
+  }
+  .box{
+    margin-top:30px;
+    width:auto;
+    height:230px;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 20px 50px 0px 50px;
+  }
+  .box>div{
+    line-height: 2;
+    width:auto;
+    height:auto;
+    border-bottom:1px solid black;
+  }
+  .more{
+    display: inline-block;
+    float:right;
+    width:auto;
+    }
+    </style>
+	</head>
+
+	<body>
+  <div class="contents">
+  <div class="board">
+    <div class="more">MORE ></div>
+    <div class="box">
+      <div>first post on board</div>
+      <div>second post on board</div>
+      <div>third post on board</div>
+      <div>forth post on board</div>
+      <div>fifth post on board</div>
+      <div>sixth post on board</div>
+    </div>
+  </div>
+  <div class="gallery">gallery preview</div>
+  <div class="visit">visit privew</div>
+	</div>
+	</body>
+</html>
