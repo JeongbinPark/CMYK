@@ -3,11 +3,7 @@
   <head>
     <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
     <title>Gallery</title>
-    <style>/*미완성*/
-    .contents_gallery {
-
-    }
-
+    <style>
     * {
       box-sizing: border-box; /*박스의 크기를 테두리를 기준으로 계산함*/
     }
@@ -130,9 +126,6 @@
     </style>
   </head>
   <body>
-
-<div class="contents_gallery">
-
     <h2 style="text-align:center">Gallery</h2>
 
     <div class="row"><!--js 파일로 묶기-->
@@ -151,11 +144,9 @@
     </div>
 
     <div id="myModal" class="modal">
-
       <span class="close cursor" onclick="closeModal()">&times;</span>
 
       <div class="modal-content">
-
         <div class="mySlides">
           <div class="numbertext">1 / 4</div>
           <img src="./img/sketch_small.jpg" style="width:100%">
@@ -198,13 +189,8 @@
         <div class="column">
           <img class="demo cursor" src="./img/6th_week_3_small.jpg" style="width:100%" onclick="currentSlide(4)" alt="6주차 할리스커피">
         </div>
-
       </div>
-
     </div>
-
-</div>
-
     <script>
       function openModal() {
         document.getElementById('myModal').style.display = "block";
