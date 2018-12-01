@@ -2,78 +2,19 @@
 <html>
 <head>
   <style>
-  div{
-    position:relative;
-  }
-  .sideBar{
-    position: absolute;
-    left:0px;
-    top:0px;
-
-    width:370px;
-    height:756px;
-    background-color:#F0F0E0;
-
-  }
-  .sideBar>.Box{
-    left:0px;
-    margin: 40px;
-
-    width: 293.5px;
-    height: 160px;
-    background-color: black;
-  }
-  #profileImg{
-    margin-top:30px;
-  }
-  .navi{
-    display: inline-block;
-    margin:40px;
-    margin-top:0px;
-    width: 293.5px;
-    height: auto;
-    border: 1px solid gray;
-    background-color:white;
-    font-size: 15px;
-  }
-  .navi .child{
-  float:left;
-  width: 293.5px;
-  height: 50px;
-  line-height: 3;
-  text-align: center;
-  border-bottom: 1px solid gray;
-  box-sizing: border-box;
-  }
-  .navi .child:last-child{
-  border-bottom: 10px;
-  }
-  #favorite{
-  height:180px;
-  margin-top:70px;
-  margin-bottom:30px;
-
-  display: grid;
-  grid-template-columns: 140px 1fr;
-  padding:5px;
-  box-sizing: border-box;
-
-  background-color: gray;
-  }
-  .grid{
-  margin:5px;
-  margin-top:45px;
-  height:120px;
-  background-color: white;
-  }
-
+body>div{
+  position: relative; top:  100px; left:100px;
+  border: 1px solid black;
+  width:550px;
+  padding:20px;
+}
   table.type04 {
     border-collapse: separate;
     border-spacing: 1px;
     text-align: left;
     line-height: 1.5;
     border-top: 1px solid #ccc;
-  margin : 20px 10px;
+  margin : 0px;
 }
 table.type04 th {
     width: 150px;
@@ -91,50 +32,37 @@ table.type04 td {
   </style>
 </head>
 <body>
-  <div class="sideBar">
-    <div class="Box" id="profileImg"></div>
-
-    <div class="navi">
-      <div class="child">HOME</div>
-      <div class="child"><a href="board.html">BOARD</a></div>
-      <div class="child"><a href="gallery.html">GALLERY</a></div>
-      <div class="child">VISIT</div>
-    </div>
-  <div class="Box" id="favorite">
-<!--	<font color="white" aligen="center">Favorite</font> -->
-<div class="grid">
-<ul>
-<li>Git</li>
-<li>Stack</li>
-<li>Solo Learn</li>
-<li>CodeChain</li>
-</ul>
-</div>
-<div class="grid">
-<ul>
-  <li>PKNU</li>
-  <li>LMS</li>
-  <li>NAVER</li>
-  <li>DAUM</li>
-</ul>
-</div>
-  </div>
-      </div>
-
-      <table class="type04">
+<div>
+        <table class="type04">
       <tr>
           <th scope="row">1</th>
-          <td>웹디자인 트렌드를 살펴보다</td>
+          <td><a href="./board_file/1.html">웹디자인 트렌드를 살펴보다</a></td>
       </tr>
       <tr>
           <th scope="row">2</th>
-          <td>html과 css의 상관관계</td>
+          <td><a href="./board_file/2.html">html과 css의 상관관계</a></td>
       </tr>
       <tr>
           <th scope="row">3</th>
-          <td>css를 공부하며...</td>
+          <td><a href="./board_file/3.html">css를 공부하며...</a></td>
       </tr>
+      <tr>
+          <th scope="row">4</th>
+          <td><a href="./board_file/4.html">flex를 잘 쓰려면</a></td>
+      </tr>
+      <tr>
+          <th scope="row">5</th>
+          <td><a href="./board_file/5.html">js로 만드는 동적인 웹</a></td>
+      </tr>
+      <tr>
+          <th scope="row">6</th>
+          <td><a href="./board_file/6.html">중앙정렬이 어려워요</a></td>
+      </tr>
+
+
+
   </table>
+</div>
 
 
 </body>
