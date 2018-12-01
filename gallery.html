@@ -128,7 +128,7 @@
   <body>
     <h2 style="text-align:center">Gallery</h2>
 
-    <div class="row"><!--js 파일로 묶기-->
+    <div class="row">
       <div class="column">
         <img src="./img/sketch_small.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
       </div>
@@ -141,6 +141,9 @@
       <div class="column">
         <img src="./img/6th_week_3_small.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
       </div>
+      <div class="column">
+        <img src="./img/2nd_week.jpg" style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+      </div>
     </div>
 
     <div id="myModal" class="modal">
@@ -148,23 +151,28 @@
 
       <div class="modal-content">
         <div class="mySlides">
-          <div class="numbertext">1 / 4</div>
+          <div class="numbertext">1 / 5</div>
           <img src="./img/sketch_small.jpg" style="width:100%">
         </div>
 
         <div class="mySlides">
-          <div class="numbertext">2 / 4</div>
+          <div class="numbertext">2 / 5</div>
           <img src="./img/4th_week_2_small.jpg" style="width:100%">
         </div>
 
         <div class="mySlides">
-          <div class="numbertext">3 / 4</div>
+          <div class="numbertext">3 / 5</div>
           <img src="./img/5th_week_2_small.jpg" style="width:100%">
         </div>
 
         <div class="mySlides">
-          <div class="numbertext">4 / 4</div>
+          <div class="numbertext">4 / 5</div>
           <img src="./img/6th_week_3_small.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">5 / 5</div>
+          <img src="./img/2nd_week.jpg" style="width:100%">
         </div>
 
         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -188,6 +196,10 @@
 
         <div class="column">
           <img class="demo cursor" src="./img/6th_week_3_small.jpg" style="width:100%" onclick="currentSlide(4)" alt="6주차 할리스커피">
+        </div>
+
+        <div class="column">
+          <img class="demo cursor" src="./img/2nd_week.jpg" style="width:100%" onclick="currentSlide(5)" alt="2주차 니뽕내뽕">
         </div>
       </div>
     </div>
