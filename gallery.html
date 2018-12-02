@@ -14,27 +14,32 @@
 
     .column {
       float: left;
-      width: 25%;
+      width: 20%;
     }
 
     #img1 {
-      content: url(./img/sketch_small.jpg)
+      content: url(./img/sketch_small.jpg);
     }
 
     #img2 {
-      content: url(./img/4th_week_2_small.jpg);
+      content: url(./img/2nd_week_small.jpg);
     }
 
     #img3 {
-      content: url(./img/5th_week_2_small.jpg)
+      content: url(./img/4th_week_2_small.jpg);
+      width: 100%;
     }
 
     #img4 {
-      content: url(./img/6th_week_3_small.jpg)
+      content: url(./img/5th_week_2_small.jpg);
     }
 
     #img5 {
-      content: url(./img/2nd_week.jpg)
+      content: url(./img/6th_week_3_small.jpg);
+    }
+
+    #myModal {
+      padding-top: 30px;
     }
 
     /*모달*/
@@ -146,9 +151,9 @@
     </style>
   </head>
   <body>
-    <h2 style="text-align:center">Gallery</h2>
+    <h1 style="text-align:center; padding-top:60px">Gallery</h1>
 
-    <div class="row"> <!--갤러리-->
+    <div class="row" style="padding:60px"> <!--갤러리-->
       <div class="column">
         <img id=img1 style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
       </div>
@@ -203,23 +208,23 @@
         </div>
         <!--모달 하단-->
         <div class="column">
-          <img id=img1 class="demo cursor" onclick="currentSlide(1)" alt="Sketch">
+          <img src="./img/sketch_small.jpg" class="demo cursor" style="width:100%" onclick="currentSlide(1)" alt="Sketch">
         </div>
 
         <div class="column">
-          <img id=img2 class="demo cursor" onclick="currentSlide(2)" alt="4주차 스타벅스">
+          <img src="./img/2nd_week_small.jpg" class="demo cursor" style="width:100%" onclick="currentSlide(2)" alt="2주차">
         </div>
 
         <div class="column">
-          <img id=img3 class="demo cursor" onclick="currentSlide(3)" alt="5주차 고요남">
+          <img src="./img/4th_week_2_small.jpg" class="demo cursor" style="width:100%" onclick="currentSlide(3)" alt="4주차">
         </div>
 
         <div class="column">
-          <img id=img4 class="demo cursor" onclick="currentSlide(4)" alt="6주차 할리스커피">
+          <img src="./img/5th_week_2_small.jpg" class="demo cursor" style="width:100%" onclick="currentSlide(4)" alt="5주차">
         </div>
 
         <div class="column">
-          <img id=img5 class="demo cursor" onclick="currentSlide(5)" alt="2주차 니뽕내뽕">
+          <img src="./img/6th_week_3_small.jpg" class="demo cursor" style="width:100%" onclick="currentSlide(5)" alt="6주차">
         </div>
       </div>
     </div>
