@@ -4,17 +4,21 @@
   <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
   <style>
   body{
-  background-color:#F7F7EB;
   margin:0px;
-  overflow: hidden;
   }
+  .wrap{
+    margin: 0px 200px 0px 200px;
+    width: 1095px;
 
+    background-color:#F7F7EB;
+    box-shadow: -5px 0px 20px #888888, 5px 0px 20px #888888;
+  }
   .sideBar{
-    position: absolute;
-    left:0px;
+    position: fixed;
+    left:200px;
     top:0px;
 
-    width:370px;
+    width:300px;
     height:756px;
     background-color:#F0F0E0;
   }
@@ -22,7 +26,7 @@
     left:0px;
     margin: 40px;
 
-    width: 293.5px;
+    width: 230px;
     height: 160px;
     background-color: black;
   }
@@ -33,7 +37,7 @@
     display: inline-block;
     margin:40px;
     margin-top:0px;
-    width: 293.5px;
+    width: 230px;
     height: auto;
     border: 1px solid gray;
     background-color:white;
@@ -41,7 +45,7 @@
   }
   .navi .child{
   float:left;
-  width: 293.5px;
+  width: 230px;
   height: 50px;
   line-height: 3;
   text-align: center;
@@ -56,8 +60,6 @@
   margin-top:70px;
   margin-bottom:30px;
 
-  display: grid;
-  grid-template-columns: 140px 1fr;
   padding:5px;
   box-sizing: border-box;
 
@@ -68,18 +70,19 @@
   margin-top:45px;
   height:120px;
   background-color: white;
+  overflow-y: scroll;
   }
-
 
   .contents {
-  position:absolute;
-  left:370px;
-  width: 1165px;
-  height:756px;
+  position:relative;
+  left:300px;
+  width: 795px;
+  //height:756px;
   }
 .contents>iframe{
-  width: 1165px;
-  height:756px;
+  width: 795px;
+  //height:756px;
+  height:2000px;
   border: 0px;
    box-sizing: border-box;
   }
@@ -104,10 +107,6 @@
             <li>Stack</li>
             <li>Solo Learn</li>
             <li>CodeChain</li>
-          </ul>
-        </div>
-        <div class="grid">
-          <ul>
             <li>PKNU</li>
             <li>LMS</li>
             <li>NAVER</li>
@@ -117,7 +116,7 @@
       </div>
     </div>
     <div class="contents">
-      <iframe id="frame" src="board.html"></iframe>
+      <iframe id="frame" src="home.html"></iframe>
     </div>
   </div>
   <script>
