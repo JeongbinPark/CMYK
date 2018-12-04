@@ -2,10 +2,15 @@
 <html>
   <head>
     <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
-    <title>Gallery</title>
     <style>
     * {
       box-sizing: border-box; /*박스의 크기를 테두리를 기준으로 계산함*/
+    }
+
+    .contents_gallery {
+      padding-top: 50px;
+  	 	padding-left: 20px;
+  		width: 735px;
     }
 
     .row > .column {
@@ -27,7 +32,6 @@
 
     #img3 {
       content: url(./img/4th_week_2_small.jpg);
-      width: 100%;
     }
 
     #img4 {
@@ -151,80 +155,82 @@
     </style>
   </head>
   <body>
-    <h1 style="text-align:center; padding-top:60px">Gallery</h1>
+    <h1 style="text-align:center; padding-top:60px">GALLERY</h1>
 
-    <div class="row" style="padding:60px"> <!--갤러리-->
-      <div class="column">
-        <img id=img1 style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
-      </div>
-      <div class="column">
-        <img id=img2 style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
-      </div>
-      <div class="column">
-        <img id=img3 style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
-      </div>
-      <div class="column">
-        <img id=img4 style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
-      </div>
-      <div class="column">
-        <img id=img5 style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
-      </div>
-    </div>
-
-    <div id="myModal" class="modal">
-      <span class="close cursor" onclick="closeModal()">&times;</span>
-      <!--모달-->
-      <div class="modal-content">
-        <div class="mySlides">
-          <div class="numbertext">1 / 5</div>
-          <img id=img1 style="width:100%">
-        </div>
-
-        <div class="mySlides">
-          <div class="numbertext">2 / 5</div>
-          <img id=img2 style="width:100%">
-        </div>
-
-        <div class="mySlides">
-          <div class="numbertext">3 / 5</div>
-          <img id=img3 style="width:100%">
-        </div>
-
-        <div class="mySlides">
-          <div class="numbertext">4 / 5</div>
-          <img id=img4 style="width:100%">
-        </div>
-
-        <div class="mySlides">
-          <div class="numbertext">5 / 5</div>
-          <img id=img5 style="width:100%">
-        </div>
-
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-        <div class="caption-container">
-          <p id="caption"></p>
-        </div>
-        <!--모달 하단-->
+    <div class="contents_gallery">
+      <div class="row"> <!--갤러리-->
         <div class="column">
-          <img src="./img/sketch_small.jpg" class="demo cursor" style="width:100%" onclick="currentSlide(1)" alt="Sketch">
+          <img id=img1 style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
         </div>
-
         <div class="column">
-          <img src="./img/2nd_week_small.jpg" class="demo cursor" style="width:100%" onclick="currentSlide(2)" alt="2주차">
+          <img id=img2 style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
         </div>
-
         <div class="column">
-          <img src="./img/4th_week_2_small.jpg" class="demo cursor" style="width:100%" onclick="currentSlide(3)" alt="4주차">
+          <img id=img3 style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
         </div>
-
         <div class="column">
-          <img src="./img/5th_week_2_small.jpg" class="demo cursor" style="width:100%" onclick="currentSlide(4)" alt="5주차">
+          <img id=img4 style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
         </div>
-
         <div class="column">
-          <img src="./img/6th_week_3_small.jpg" class="demo cursor" style="width:100%" onclick="currentSlide(5)" alt="6주차">
+          <img id=img5 style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+        </div>
+      </div>
+
+      <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <!--모달-->
+        <div class="modal-content">
+          <div class="mySlides">
+            <div class="numbertext">1 / 5</div>
+            <img id=img1 style="width:100%">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">2 / 5</div>
+            <img id=img2 style="width:100%">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">3 / 5</div>
+            <img id=img3 style="width:100%">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">4 / 5</div>
+            <img id=img4 style="width:100%">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">5 / 5</div>
+            <img id=img5 style="width:100%">
+          </div>
+
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+          <div class="caption-container">
+            <p id="caption"></p>
+          </div>
+          <!--모달 하단-->
+          <div class="column">
+            <img src="./img/sketch_small.jpg" class="demo cursor" style="width:100%" onclick="currentSlide(1)" alt="Sketch">
+          </div>
+
+          <div class="column">
+            <img src="./img/2nd_week_small.jpg" class="demo cursor" style="width:100%" onclick="currentSlide(2)" alt="2주차">
+          </div>
+
+          <div class="column">
+            <img src="./img/4th_week_2_small.jpg" class="demo cursor" style="width:100%" onclick="currentSlide(3)" alt="4주차">
+          </div>
+
+          <div class="column">
+            <img src="./img/5th_week_2_small.jpg" class="demo cursor" style="width:100%" onclick="currentSlide(4)" alt="5주차">
+          </div>
+
+          <div class="column">
+            <img src="./img/6th_week_3_small.jpg" class="demo cursor" style="width:100%" onclick="currentSlide(5)" alt="6주차">
+          </div>
         </div>
       </div>
     </div>
