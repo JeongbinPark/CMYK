@@ -5,6 +5,7 @@
   <style>
   body{
   margin:0px;
+  overflow-x: hidden; //수정됨
   }
   .wrap{
     margin: 0px 200px 0px 200px;
@@ -84,6 +85,12 @@
   border: 0px;
   box-sizing: border-box;
   }
+  a{
+     color: black;
+   }
+  a:hover{
+    color:gray;
+  }
   </style>
 </head>
 <body>
@@ -100,15 +107,7 @@
       <div class="Box" id="favorite">
         <!--	<font color="white" aligen="center">Favorite</font> -->
         <div class="grid">
-          <ul>
-            <li>Git</li>
-            <li>Stack</li>
-            <li>Solo Learn</li>
-            <li>CodeChain</li>
-            <li>PKNU</li>
-            <li>LMS</li>
-            <li>NAVER</li>
-            <li>DAUM</li>
+          <ul id="fvrt">
           </ul>
         </div>
       </div>
@@ -118,7 +117,54 @@
     </div>
   </div>
   <script>
-    //click event 구현 중
+  var num=0;
+
+  //change src in iframe
+  function setSrc(src){
+    document.getElementById("frame").setAttribute("src",src);
+  }
+  //click event in navi
+  function clk(num){
+    switch(num){
+      case 0:
+        setSrc("home.html"); break;
+      case 1:
+        setSrc("board.html"); break;
+      case 2:
+        setSrc("gallery.html"); break;
+      case 3:
+        setSrc("home.html"); break;
+    }
+  }
+  //add list in favorite with name and link
+  function addList(name, link){
+    var a = document.createElement("a");
+    var ul = document.getElementById("fvrt");
+    var newLi = document.createElement("li");
+
+    a.textContent = name;
+    a.setAttribute('href', link);
+    a.setAttribute('style', "text-decoration-line:none");
+    a.setAttribute('target',"_blank");
+    newLi.appendChild(a);
+    ul.appendChild(newLi);
+    }
+
+  //set click event in navi
+  for(var i =0; i<4; i++){
+    document.getElementsByClassName("child")[i].setAttribute('style','cursor:pointer');
+    document.getElementsByClassName("child")[i].setAttribute('onclick','clk('+i+');');
+  }
+
+  addList('Github',"http://www.github.com");
+  addList('Stack Overflow',"https://stackoverflow.com/");
+  addList('Solo Learn',"https://www.sololearn.com/");
+  addList('CodeChain',"https://codechain.io/");
+  addList('PKNU',"http://pknu.ac.kr");
+  addList('LMS',"http://lms.pknu.ac.kr");
+  addList('Naver',"http://www.naver.com");
+  addList('Daum',"http://www.daum.com");
+
   </script>
 </body>
 <html>
