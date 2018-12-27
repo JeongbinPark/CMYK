@@ -102,7 +102,7 @@
         <div class="child">HOME</div>
         <div class="child">BOARD</div>
         <div class="child">GALLERY</div>
-        <div class="child">VISIT</div>
+        <div class="child">PROFILE</div>
       </div>
       <div class="Box" id="favorite">
         <!--	<font color="white" aligen="center">Favorite</font> -->
@@ -117,8 +117,6 @@
     </div>
   </div>
   <script>
-  var num=0;
-
   //change src in iframe
   function setSrc(src){
     document.getElementById("frame").setAttribute("src",src);
@@ -133,7 +131,7 @@
       case 2:
         setSrc("gallery.html"); break;
       case 3:
-        setSrc("home.html"); break;
+        setSrc("profile.html"); break;
     }
   }
   //add list in favorite with name and link
