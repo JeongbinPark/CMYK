@@ -33,6 +33,7 @@
   }
   #profileImg{
     margin-top:30px;
+    background-color: #F0F0E0;
   }
   .navi{
     display: inline-block;
@@ -52,9 +53,15 @@
   text-align: center;
   border-bottom: 1px solid gray;
   box-sizing: border-box;
+  background-color: #f1f1f1;
+  transition: 0.5s;
   }
   .navi .child:last-child{
   border-bottom: 10px;
+  }
+  .child:hover{
+  background-color: #555;
+  color: white;
   }
   #favorite{
   height:180px;
@@ -68,7 +75,7 @@
   }
   .grid{
   margin:5px;
-  margin-top:45px;
+  margin-top:5px;
   height:120px;
   background-color: white;
   overflow-y: scroll;
@@ -91,12 +98,21 @@
   a:hover{
     color:gray;
   }
+  span{
+    color:white;
+    font-size:25px;
+    font-family:Georgia;
+    line-height: 1.5;
+    letter-spacing: 3px;
+  }
   </style>
 </head>
 <body>
   <div class="wrap">
     <div class="sideBar">
-      <div class="Box" id="profileImg"></div>
+      <div class="Box" id="profileImg">
+        <img src="./img/CMYK.jpg" width="230px" style="margin-top:15px">
+      </div>
 
       <div class="navi">
         <div class="child">HOME</div>
@@ -105,7 +121,7 @@
         <div class="child">PROFILE</div>
       </div>
       <div class="Box" id="favorite">
-        <!--	<font color="white" aligen="center">Favorite</font> -->
+      	<span><center>Favorite</center></span>
         <div class="grid">
           <ul id="fvrt">
           </ul>
@@ -158,7 +174,7 @@
   addList('Stack Overflow',"https://stackoverflow.com/");
   addList('Solo Learn',"https://www.sololearn.com/");
   addList('CodeChain',"https://codechain.io/");
-  addList('PKNU',"http://pknu.ac.kr");
+  addList('PKNU',"http://www.pknu.ac.kr");
   addList('LMS',"http://lms.pknu.ac.kr");
   addList('Naver',"http://www.naver.com");
   addList('Daum',"http://www.daum.com");
